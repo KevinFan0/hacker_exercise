@@ -19,7 +19,7 @@ def main():
     parser.add_option("-d", dest='dname', type='string', help="specify dictionary file")
     (options, args) = parser.parse_args()
 
-    if (options.zname == None | options.dname == None):
+    if (options.zname == None) | (options.dname == None):
         print(parser.usage)
         exit(0)
     else:
